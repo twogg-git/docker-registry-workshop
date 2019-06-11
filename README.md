@@ -1,7 +1,3 @@
-<img height="5" width="5" src="IMG">
-
-<img src="https://raw.githubusercontent.com/twogg-git/talks/master/resources/dockerhub-talk/">
-
 <img src="https://raw.githubusercontent.com/twogg-git/go-docker-hub/master/docker-hub.png">
 
 # Docker Registry Workshop
@@ -83,12 +79,15 @@ docker tag httpd-test twoggtest/httpd:1.0
 docker push twoggtest/httpd:1.0
 ```
 
+<img src="https://raw.githubusercontent.com/twogg-git/talks/master/resources/dockerhub-talk/hub-pushed_image.png">
 
 
 ## DockerHub Automated Builds
 
+If you want a personalized repo, go to Create Repository and select a connected git account.
 <img src="https://raw.githubusercontent.com/twogg-git/talks/master/resources/dockerhub-talk/hub-create_repository.png">
 
+Then setup your branch or tag tag and the autobild triggers.
 <img src="https://raw.githubusercontent.com/twogg-git/talks/master/resources/dockerhub-talk/hub-build_settings.png">
 
 
@@ -100,7 +99,9 @@ docker build -t twoggtest/golang:1.0 .
 docker run --name twoggtest-golang --rm -p 8081:8080 twoggtest/golang:1.0
 ```
 
-
+```sh
+docker push twoggtest/golang:1.0
+```
 
 
 

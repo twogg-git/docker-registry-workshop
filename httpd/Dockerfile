@@ -1,5 +1,5 @@
-FROM httpd:2.4-alpine
+FROM httpd:2.4.39-alpine 
 
-ADD site/ /usr/local/apache2/htdocs/
+ADD index.html /usr/local/apache2/htdocs/
 
 EXPOSE 80

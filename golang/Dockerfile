@@ -1,11 +1,9 @@
 
-FROM golang
+FROM golang:1.11.10-alpine3.9
 
 ADD /main.go /go/src/workshop/
 
 WORKDIR /go/src/workshop/
-
-RUN go get -v .
 
 RUN go install workshop
 

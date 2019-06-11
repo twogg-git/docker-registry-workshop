@@ -1,4 +1,3 @@
-
 FROM golang:1.11.10-alpine3.9
 
 ADD /main.go /go/src/workshop/

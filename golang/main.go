@@ -8,7 +8,7 @@ import (
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	html := `<!DOCTYPE html><html><body><center>
-		<img src="https://github.com/twogg-git/talks/blob/master/resources/dockerhub-talk/hub-index-golang.png">
+		<img src="https://raw.githubusercontent.com/twogg-git/talks/master/resources/dockerhub-talk/hub-index-golang.png">
 		<h1 style="color:blue">Baby steps with Docker Registry + Golang!</h1>
         </center></body></html>`
 	fmt.Fprintf(w, html)
